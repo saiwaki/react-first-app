@@ -18,6 +18,7 @@ export default class Routing extends React.Component{
       <BrowserRouter>
         <div>
           <Header />
+          <base href="/" />
           <div>
             <Switch>
               <Route exact path="/" render={ (props) => <Home {...props} v="abc" /> } />
