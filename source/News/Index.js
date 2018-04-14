@@ -30,6 +30,7 @@ export default class Index extends Component {
           <li><Link to="/news/1">1</Link></li>
           <li><Link to="/news/2">2</Link></li>
           <li><Link to="/news/3">3</Link></li>
+          <li><Link to="/news/abc">abc</Link></li>
         </ul>
       </div>
     )

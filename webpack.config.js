@@ -35,13 +35,7 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, 'public'),
     port: 3033,
-    historyApiFallback: true,
-    // proxy: {
-    //   '/news': {
-    //     target: 'http://localhost:3033',
-    //     pathRewrite: {'^/news' : ''}
-    //   }
-    // }
+    historyApiFallback: true
   },
 
   performance: { hints: false }
