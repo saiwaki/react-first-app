@@ -28,6 +28,7 @@ module.exports = {
       title: '',
       inject: true,
       filename: 'index.html',
+      // template: './source/index.html'
     })
   ],
 
