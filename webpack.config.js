@@ -9,7 +9,7 @@ module.exports = {
   },
 
   output: {
-    filename: 'bundle.js',
+    filename: './bundle.js',
     path: path.resolve(__dirname, 'public')
   },
 
@@ -26,9 +26,9 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: '',
-      inject: true,
+      inject: false,
       filename: 'index.html',
-      // template: './source/index.html'
+      template: './source/index.html'
     })
   ],
 
@@ -36,12 +36,12 @@ module.exports = {
     contentBase: path.resolve(__dirname, 'public'),
     port: 3033,
     historyApiFallback: true,
-    proxy: {
-      '/news': {
-        target: 'http://localhost:3033',
-        pathRewrite: {'^/news' : ''}
-      }
-    }
+    // proxy: {
+    //   '/news': {
+    //     target: 'http://localhost:3033',
+    //     pathRewrite: {'^/news' : ''}
+    //   }
+    // }
   },
 
   performance: { hints: false }
