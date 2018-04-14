@@ -31,6 +31,7 @@ export default class Index extends Component {
         <Helmet
           title="Home"
           meta={[
+            { name: "google-site-verification", content:"JsIFmRXH4hzC39YbTGopWzK7FreWJ5CswRzJhNL6ZeE" }
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:title', content: 'Home' },
             { property: 'og:title', content: 'Home' }
