@@ -19,8 +19,8 @@ export default class Index extends Component {
           title={title}
           meta={[
             { name: 'twitter:card', content: 'summary' },
-            { name: 'twitter:title', content: 'News' },
-            { property: 'og:title', content: 'News' }
+            { name: 'twitter:title', content: title },
+            { property: 'og:title', content: title }
           ]}
         />
         <div>
