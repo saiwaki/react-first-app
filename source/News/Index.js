@@ -9,10 +9,14 @@ export default class Index extends Component {
   }
   
   render(){
+    let title = "News";
+    if(this.props.match.params.id){
+      title = "News" + this.props.match.params.id
+    }
     return(
       <div>
         <Helmet
-          title="News"
+          title={title}
           meta={[
             { name: 'twitter:card', content: 'summary' },
             { name: 'twitter:title', content: 'News' },
