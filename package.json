@@ -5,9 +5,10 @@
   "main": "index.js",
   "scripts": {
     "w": "webpack && cp _redirects public/",
-    "w:watch": "webpack --watch",
-    "w:dev": "webpack-dev-server",
-    "next": "next"
+    "watch": "webpack --watch --progress",
+    "dev": "webpack-dev-server --progress",
+    "next": "next",
+    "dll": "webpack --config webpack.dll.config.js"
   },
   "reactSnap": {
     "source": "public"

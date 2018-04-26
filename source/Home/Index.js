@@ -37,7 +37,7 @@ export default class Index extends Component {
           ]}
         />
         <div>
-          insert react! {this.props.v}
+          insert react!!! {this.props.v}
         </div>
       </div>
     )
